@@ -1,0 +1,17 @@
+#profile-column{
+    border: none;
+    box-sizing: border-box;
+    padding-top: 2.5rem;
+    /* background-image: linear-gradient(60deg, #013b1e, #004724, #00532a, #006031, #006d37, #00793d, #008643, #019349, #01a351, #01b259, #02c362, #03d36a); */
+    background-image: linear-gradient(to right top, #003b1d, #004b25, #005c2e, #006d36, #017f3f);
+}
+
+#profile-menu{
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+    #avatar {
+        max-width: 160px !important;
+    }
+}

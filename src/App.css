@@ -28,11 +28,77 @@
   color: #61dafb;
 }
 
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+/*Do not delete */
+.App-container{
+  min-height: 100vh;
+}
+#floater{
+  position: fixed  !important;
+  bottom: 10px;
+  z-index: 100;
+  left: calc(50% - 16px);
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0px auto;
+  transition: 0.2s ease;
+}
+#floater:hover{
+  transform: translateX(-50%) scale(1.05);
+}
+
+#floater .button:nth-child(1){
+  border-radius: 30px 0px 0px 30px;
+}
+
+#floater .button:nth-child(2){
+  border-radius: 0px 30px 30px 0px ;
+}
+.issue-options > button{
+  border-radius: 0px !important;
+}
+
+#download-section{
+  background-image: url(./assets/wave.svg);
+  background-repeat: no-repeat ;
+  background-size: cover;
+  /* min-height: 40vh; */
+  background-position-y: 30%;
+  background-position-x:left ;
+}
+.noPadding {
+  padding:  4px 0px !important;
+}
+.grid .toggle.checkbox{
+  transform: scale(0.9);
+}
+
+@media only screen and (max-width: 400px) {
+  /* For mobile phones: */
+  .available-issues {
+    font-size: 13px !important;
+    padding-left : 3.07142857em
+  }
+  .issues-item{
+    padding: 13px 0px  !important;
+    margin: 0px !important
+  }
+
+  .header .menu-button{
+    padding: 4px 0px;
+  }
+  .header .menu-button i{
+    width: 16px;
+  }
+  .grid .toggle.checkbox{
+    transform: scale(0.8);
   }
 }

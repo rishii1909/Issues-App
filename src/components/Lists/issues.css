@@ -1,0 +1,21 @@
+
+.issue-cards .content span{
+    font-weight: 800 !important;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 0.5rem;
+    border-radius: 3px;
+    background-color: rgb(230, 230, 230);
+}
+
+@media only screen and (max-width: 768px) {
+    .issue-cards .card{
+        margin-left: 0.6em;
+        margin-right: 0.6em;
+        width: calc( 50% - 1.2em );
+    }
+     .issue-cards .card  .header, .issue-cards .content .description span{
+        font-size: 0.9em !important;
+    }
+
+    
+}
